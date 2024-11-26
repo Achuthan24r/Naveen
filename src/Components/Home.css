@@ -1,0 +1,83 @@
+/* Home section styling */
+#home {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #c0c2ec, #0a0b0d); /* Gradient background */
+    color: #444040;
+    text-align: center;
+    padding: 0 20px; /* Add some padding for better text spacing on smaller screens */
+  }
+  
+  /* Heading styling */
+  #home h1 {
+    font-size: 4rem; /* Large font size for the main heading */
+    margin-bottom: 20px;
+    letter-spacing: 2px; /* Spacing between letters for a modern look */
+    font-weight: 700; /* Make the text bold */
+    text-transform: uppercase; /* All caps for a sleek look */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Soft text shadow */
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation for heading */
+  }
+  
+  /* Paragraph styling */
+  #home p {
+    font-size: 1.5rem;
+    max-width: 800px; /* Limits the width of the text for better readability */
+    line-height: 1.6;
+    margin-bottom: 40px;
+    color: rgba(9, 5, 5, 0.8); /* Slightly lighter color for secondary text */
+    animation: fadeIn 3s ease-in-out; /* Fade-in animation for paragraph */
+  }
+  
+  /* Call-to-action button styling */
+  #home .cta-button {
+    background-color: #f0a800db;
+    color: #333;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeIn 3.5s ease-in-out;
+  }
+  
+  /* Button hover effect */
+  #home .cta-button:hover {
+    background-color: #d18c00; /* Darken the button on hover */
+    transform: scale(1.05); /* Slight scale-up effect on hover */
+  }
+  
+  /* Fade-in animation for a smoother appearance */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design: Adjust the font sizes for smaller screens */
+  @media (max-width: 768px) {
+    #home h1 {
+      font-size: 3rem;
+    }
+  
+    #home p {
+      font-size: 1.2rem;
+    }
+  
+    #home .cta-button {
+      font-size: 1rem;
+      padding: 12px 25px;
+    }
+  }
+  

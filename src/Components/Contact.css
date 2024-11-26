@@ -1,0 +1,181 @@
+/* Contact section styling */
+#contact {
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #2889eb; /* Light background color */
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+    color: #6f0707; /* Dark text for contrast */
+  }
+  
+  /* Contact section title */
+  #contact h1 {
+    font-size: 3rem;
+    color: #252ff9; /* Primary color for the title */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Horizontal line under title */
+  #contact h1::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #050505; /* Underline color */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+  }
+  
+  /* Contact form styling */
+  .contact-form {
+    background-color: #fff; /* White background for form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Padding inside the form */
+    max-width: 600px; /* Maximum width for form */
+    width: 100%; /* Full width for small screens */
+  }
+  
+  /* Input fields styling */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%; /* Full width */
+    padding: 15px; /* Padding inside fields */
+    margin-bottom: 20px; /* Space between fields */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1rem; /* Font size for inputs */
+    transition: border-color 0.3s ease; /* Transition for border color */
+  }
+  
+  /* Input fields focus effect */
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border-color: #4e54c8; /* Change border color on focus */
+    outline: none; /* Remove outline */
+  }
+  
+  /* Submit button styling */
+  .contact-form button {
+    background-color: #4e54c8; /* Primary button color */
+    color: #fff; /* White text */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 15px 20px; /* Padding for button */
+    font-size: 1rem; /* Font size for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Transition for background color */
+  }
+  
+  /* Submit button hover effect */
+  .contact-form button:hover {
+    background-color: #3b3e9d; /* Darker shade on hover */
+  }
+  
+  /* Social media links styling */
+  .social-links {
+    margin-top: 40px; /* Space above social links */
+  }
+  
+  .social-links a {
+    margin: 0 15px; /* Space between links */
+    color: #4e54c8; /* Primary color for links */
+    text-decoration: none; /* No underline */
+    font-size: 1.5rem; /* Font size for icons */
+    transition: color 0.3s ease; /* Transition for color change */
+  }
+  
+  /* Social links hover effect */
+  .social-links a:hover {
+    color: #3b3e9d; /* Darker shade on hover */
+  }
+  
+  /* Fade-in animation for a smoother appearance */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    #contact h1 {
+      font-size: 2.5rem; /* Smaller title on mobile */
+    }
+  }
+  
+
+  .contact-form {
+    /* Your existing styles */
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    font-size: 40px;
+    transition: transform 0.3s, color 0.3s;
+    color: #333;
+  }
+  
+  .icon.github:hover {
+    color: #4078c0; /* GitHub blue */
+    transform: rotateY(360deg) scale(1.2);
+  }
+  
+  .icon.linkedin:hover {
+    color: #0077b5; /* LinkedIn blue */
+    transform: rotateX(360deg) scale(1.2);
+  }
+  
+  .icon.twitter:hover {
+    color: #1da1f2; /* Twitter blue */
+    transform: rotateZ(360deg) scale(1.2);
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    font-size: 40px;
+    transition: transform 0.3s, color 0.3s;
+  }
+  
+  .icon.github:hover {
+    color: #4078c0; /* GitHub blue */
+    transform: rotateY(360deg) scale(1.2);
+  }
+  
+  .icon.linkedin:hover {
+    color: #0077b5; /* LinkedIn blue */
+    transform: rotateX(360deg) scale(1.2);
+  }
+  
+  .icon.gmail:hover {
+    color: #d93025; /* Gmail red */
+    transform: rotateY(360deg) scale(1.2);
+  }
+  
+  .icon.instagram:hover {
+    color: #E1306C; /* Instagram pink */
+    transform: rotateZ(360deg) scale(1.2);
+  }

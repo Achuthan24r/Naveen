@@ -1,0 +1,130 @@
+/* About section styling */
+#about {
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; /* Light background for contrast */
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+    color: #333; /* Dark text for contrast */
+  }
+  
+  /* About section title */
+  #about h1 {
+    font-size: 3rem;
+    color: #030523; /* Primary color for the title */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Horizontal line under title */
+  #about h1::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #d0d1d7;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+  }
+  
+  /* Paragraph styling */
+  #about p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+    max-width: 800px;
+    margin-bottom: 40px;
+    color: #666;
+    animation: fadeIn 3s ease-in-out; /* Fade-in animation for text */
+  }
+  
+  /* Skills section for listing personal details or expertise */
+  #about .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  #about .skills .skill-item {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #about .skills .skill-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Skill item title */
+  #about .skills .skill-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #4e54c8; /* Color to match the title */
+  }
+  
+  /* Skill item description */
+  #about .skills .skill-item p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  /* Fade-in animation for a smoother appearance */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    #about h1 {
+      font-size: 2.5rem;
+    }
+  
+    #about p {
+      font-size: 1.2rem;
+    }
+  
+    #about .skills .skill-item {
+      width: 100%; /* Make skill items full width on small screens */
+    }
+  }
+  
+  .about-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-text {
+    flex: 1;
+  }
+  
+  .about-image {
+    margin-left: 20px; /* Adjust as needed */
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  

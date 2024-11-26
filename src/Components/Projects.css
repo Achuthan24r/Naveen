@@ -1,0 +1,107 @@
+/* Projects section styling */
+#projects {
+    min-height: 100vh; /* Full screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center; /* Center-align text */
+    color: #333; /* Dark text for contrast */
+  }
+  
+  /* Projects section title */
+  #projects h1 {
+    font-size: 3rem;
+    color: #4e54c8; /* Primary color for the title */
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out; /* Fade-in animation */
+  }
+  
+  /* Horizontal line under title */
+  #projects h1::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: #8f94fb; /* Underline color */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+  }
+  
+  /* Projects container */
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between project cards */
+    max-width: 1200px; /* Maximum width for alignment */
+    margin: 0 auto; /* Center the container */
+  }
+  
+  /* Individual project card styling */
+  .project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px; /* Fixed width for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left; /* Align text to the left for readability */
+  }
+  
+  /* Project card hover effect */
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Project card image */
+  .project-card img {
+    width: 100%; /* Full width image */
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the container without distortion */
+  }
+  
+  /* Project title */
+  .project-title {
+    font-size: 1.5rem;
+    color: #4e54c8; /* Primary color for title */
+    margin: 15px; /* Margin for spacing */
+  }
+  
+  /* Project description */
+  .project-description {
+    font-size: 1rem;
+    color: #555; /* Darker text for description */
+    margin: 0 15px 15px; /* Margin for spacing */
+  }
+  
+  /* Fade-in animation for a smoother appearance */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    #projects h1 {
+      font-size: 2.5rem; /* Smaller title on mobile */
+    }
+  
+    .project-card {
+      width: 90%; /* Make cards responsive on small screens */
+    }
+  }
+  
